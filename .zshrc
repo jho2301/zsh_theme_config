@@ -102,4 +102,10 @@ source $ZSH/oh-my-zsh.sh
 LS_COLORS=$LS_COLORS:'di=0;32:' ; export LS_COLORS
 zstyle ':completion:*' list-colors 'di=0;32'
 alias go="cd ~/Desktop/42seoul"
+mkdircd()
+{
+    mkdir $1
+    cd $1
+}
+alias mkdir="mkdircd"
 export PKG_CONFIG_PATH=~/Desktop/42seoul/subject/cub3d/minilibx
